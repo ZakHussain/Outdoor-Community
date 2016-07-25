@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<title>Login/Registration</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" media="screen" title="no title" charset="utf-8">	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+	<div id="main">
+		<div id="mainLogo">
+			<img src="{% static 'images/coding_dojo.png' %}" alt="coding dojo logo">
+		</div>
+		<div id="messages" class="container">
+			{{ message }}
+		</div>
+		<div class="container">
+			 <h2>Submitted Info:</h2>
+			<div id="surveyResults">
+				<p><b>First Name: </b>{{ firstName }}</p>
+				<p><b>Last Name: </b>{{ lastName }}</p>
+				<p><b>Email: </b>{{ email }}</p>
+			</div>
+			<form id="reutrn" action="/login_and_register/" method = "POST">
+			{% csrf_token %}
+      			<button type="submit" class="btn btn-default"><a href="/login_and_register/">Return</a></button>
+    		</form>
+		</div>
+		<div id="list">
+			<table>
+			  <tr>
+			  	<th>ID</th>
+			    <th>First Name</th>
+			    <th>Email</th>
+			    <th>Created</th>
+			    <th>Action</th>
+			  </tr>
+			  {% for user in Users %}
+			  <tr>
+			  		<td>{{ user.id }}</td>
+						<td>{{ user.firstName }}</td>
+						<td>{{ user.email }}</td>
+						<td>{{ user.created_at }}</td>
+						<td>
+							<form action="/login_and_register/deleteUser/{{ user.id }}" method="post">
+							{% csrf_token %}
+							<button type="submit" class="btn btn-default">Delete</button>
+						</form>
+						</td>
+			  </tr>
+			  {% endfor %}
+			</table>
+		</div>
+</body>
+</html>
+	

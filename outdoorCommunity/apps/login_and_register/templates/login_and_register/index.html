@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<title>Login/Registration</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" media="screen" title="no title" charset="utf-8">	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+	<div id="main">
+		<div id="mainLogo">
+			<img src="{% static 'images/coding_dojo.png' %}" alt="coding dojo logo">
+  			<div class="container">
+			<h2 class="login">Login:</h2>
+			<form class="login" role='form' action='/login_and_register/login' method='post'>
+				{% csrf_token %}
+				<div class="form-group">
+			    	<label for="email">Email:</label>
+			    	<input type="text" class="form-control" name="emailLogin" id="emailLogin" placeholder="user@mydomain.com">
+			    </div>
+			    <div class="form-group">
+		    		<label for="password">Password:</label>
+		    	<input type="password" class="form-control" name="passwordLogin" id="passwordLogin" placeholder="***********">
+		    	<button type="submit" class="btn btn-default">Submit</button>
+		    	</div>
+			</form>
+			</div id="messageBox">
+				{{ message }}
+  			</div>
+		</div>
+		</div>
+		<div class="container">
+		  <h2>Register Below:</h2>
+		  <form role='form' action='/login_and_register/result' method='post'>
+		  	{% csrf_token %}
+		    <div class="form-group">
+		      <label for="firstName">First Name:</label>
+		      <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name">
+		    </div>
+		    <div class="form-group">
+		    	<label for="lastName">Last Name:</label>
+		    	<input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name">
+		    </div>
+		    <div class="form-group">
+		    	<label for="email">Email:</label>
+		    	<input type="text" class="form-control" name="email" id="email" placeholder="user@mydomain.com">
+		    </div>
+		    <div class="form-group">
+		    	<label for="password">Password:</label>
+		    	<input type="password" class="form-control" name="password" id="password" placeholder="***********">
+		    </div>
+		    <div class="form-group">
+		    	<label for="confirmPassword">Confirm Password:</label>
+		    	<input type="text" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="***********">
+		    </div>
+		    <button type="submit" class="btn btn-default">Submit</button>
+		  </form>
+		</div>
+	</div>
+</body>
+</html>

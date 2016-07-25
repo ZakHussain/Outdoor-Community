@@ -1,0 +1,70 @@
+body {
+}
+p { 
+	margin: 0 auto;
+	width: 900px;
+ }
+ #mainLogo {
+  	margin: 0 auto;
+ 	display: block;
+ 	text-align: left;
+ }
+ img {
+ 	width:500px;
+ 	display: block;
+ 	margin: 0 auto;
+ }
+ }
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+#main {
+	margin: 0 auto
+	width: 900px;
+	height: 440px;
+	background-color: hsl(50,100%,50%);
+}
+.container {
+	width: 500px;
+}
+	#surveyResults {
+		font-size: 150%;
+		margin: 0 auto;
+		width: 475px;
+	}
+	.login {
+		margin-top: -10px;
+		text-align: left;
+	}
+	#messageBox {
+		text-align: center;
+		margin: 0 auto;
+		height: 50px;
+	}
+		#messages {
+			margin:-10px auto 0px auto;
+			width: 600px;
+			text-align: center;
+			font-size: 150%;
+			font-weight: bold;
+			text-align: center;
+			height: 50px;
+			display: block;
+		}
+	#list {
+		text-align: center;
+		margin: 50px auto 0 700px;
+		width: 800px;
+	}
