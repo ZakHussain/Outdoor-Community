@@ -1,0 +1,112 @@
+INDEX PAGE
+
+
+Login/Registration
+Group Activities
+Current Weather Information
+	Regions and Important Readout is all Based on Important Natural Landmarks rather than Major Cities:
+		Everest (always shown)
+		Ranier 
+		McKinley
+		El Capitan
+		West Glacier
+		West YellowStone
+			links to information on each
+	This is made to entice users to set their goals possibly for one of these places.  
+
+CHALLENGE PAGE
+	Badges are earned for challenges that are accomplished
+	LeaderBoards?
+	Who can gain this most elevation this month?
+	Greatest Distance Walked
+	Fastest with (minimum distance required)
+	Category Climbs
+	Who can drive their car the least?
+	Category of Rapids
+	
+
+Levels are Earned for Each Discipline (a feature for later):
+	As an example rock climbers who have accomplished 
+	Famous professionals are already given a rank of mastery if they join if they make themselves known:
+		If you are a professional climber and you are joining mountain-wise for the first time,
+		please contact us 
+	When someone in your group succeeds in overcoming a difficult task and records it, it is shown on your group profile
+		-this is to promote verification that the event happened
+	Mastery would be difficult to attain and must be consistently verified amongst other users either in groups or outside
+		-contend success
+		
+
+ASTRONOMY Page:
+	Plan to see events during your trip
+	What is happening celestially during the period of your trip.
+	
+	
+TRIP Page:
+	'Create and Adventure'
+	Your Groups Upcoming Trips
+	Your Trips from the Past
+	Suggestions for Other Trips you may be interested in
+	
+	
+	
+Data from Last Workout
+	Elevation Gain
+	How to track with GPS?  Garmin Device?
+	Link to Last Workout
+Data from Overall Efforts
+	Average Elevation Gain/Trip
+	Average Distance Walked
+	Average Distance Downhill
+		For skiing KM/H
+	Pie Chart for Activitiy Types
+	
+	Drive Time: (who has the lowest?)
+	
+
+Seach Engine:  
+	Criteria for Matching:
+		Keyword
+		Gender
+		Primary Activity
+		Within so many miles
+		
+APIs
+	Weather
+	NASA...for links to which bodies are the most luminescent in the sky for the night you are out
+Relevant News:
+	Concerning the Places for your trip:
+		Traffic
+		Future Weather
+		Things that may impact your experience	
+	
+
+GROUP PAGE
+	Upcoming Trips
+	Past Trips 
+	Rundown of Success Events
+			
+
+PROFILE PAGE
+	User Name:
+	Actual Name:  (Choice to Show to Groups)
+	Group(s):
+	Primary Activity:
+		Ice Climbing
+		Skiing
+		Cave Spellunking
+		BackCountry Skiing
+		Rock Climbing
+		White Water Kayaking
+		Cycling
+		Mountain Climbing
+		SnowShoeing
+		Hiking
+		Talus Running
+		Mountain Biking
+	Rundown of Success Events that other members and yourself have accomplished	
+	User Match Suggestions (an array of profiles small pics with first name)		
+	
+
+
+
+	
